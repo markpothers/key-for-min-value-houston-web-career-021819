@@ -6,6 +6,7 @@ current_value = 1000000000000000000
 lowest = nil
   name_hash.each do |key, value|
     if value < current_value
+      current_value = value
       lowest = key
     end
   end
